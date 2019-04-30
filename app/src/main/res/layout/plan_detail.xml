@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:text="概述"
+                android:layout_marginLeft="20dp"/>
+            <EditText
+                android:id="@+id/modify_describe"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="50dp"
+                android:textSize="14sp"
+                android:hint="计划概述"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:text="开始时间"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:id="@+id/modify_start_time"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="50dp"
+                android:text="选择开始时间"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:text="结束时间"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:id="@+id/modify_end_time"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="50dp"
+                android:text="选择结束时间"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:text="重要性"
+                android:layout_marginLeft="20dp"/>
+
+            <EditText
+                android:id="@+id/modify_importance"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:hint="1到5的数,越大表示重要性越高"
+                android:textSize="14sp"
+                android:digits="12345"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:text="详细介绍"
+                android:layout_marginLeft="20dp"/>
+
+            <EditText
+                android:id="@+id/modify_detail"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:hint="计划的更多内容"
+                android:textSize="14sp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/modify_check"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_horizontal"
+            android:visibility="invisible"
+            android:layout_marginTop="30dp"
+            android:text="输入非法" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/can_modify"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <Button
+            android:id="@+id/modify"
+            android:layout_alignParentBottom="true"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="修改计划" />
+        <Button
+            android:id="@+id/complete"
+            android:layout_alignParentBottom="true"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="完成计划" />
+    </LinearLayout>
+
+</RelativeLayout>
